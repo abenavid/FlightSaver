@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Sync AI | AI-Powered Agile Automation</title>
+    <style>
+        /* General Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding-top: 70px; /* Adjust to match your navbar height */
+            background: #0E0E0E;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #121212;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            display: flex; /* Ensures proper alignment */
+            align-items: center; /* Aligns the logo and text in the middle */
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .logo img {
+            height: 40px;  /* Force a reasonable height */
+            width: auto;   /* Maintain aspect ratio */
+            margin-right: 10px; /* Space between logo and text */
+            display: inline-block;
+            vertical-align: middle; /* Aligns with the text */
+        }
+        .menu a {
+            margin-left: 20px;
+            color: #ccc;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            padding-top: 140px; /* Increase this value if the navbar still overlaps */
+        }
+        .hero h1 {
+            font-size: 48px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #aaa;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #002fa7;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            color: #fff;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #0056b3;
+        }
+
+        /* Trusted By Section */
+        .trusted {
+            text-align: center;
+            background: #121212;
+            padding: 40px 0;
+        }
+        .trusted p {
+            font-size: 18px;
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .logo-container img {
+            height: 40px;
+            opacity: 1;
+            transition: 0.3s;
+            filter: brightness(0) invert(1);
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        /* Features Section */
+        .features {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .feature-box {
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            background: #181818;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+        }
+        .feature-box h3 {
+            font-size: 22px;
+            color: #fff;
+        }
+        .feature-box p {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        /* How It Works Section */
+        .visual {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .visual img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            text-align: center;
+            background: #121212;
+            padding: 80px 20px;
+        }
+        .testimonials h2 {
+            font-size: 28px;
+            color: #fff;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-style: italic;
+            color: #bbb;
+        }
+
+        /* Signup Section */
+        .signup {
+            text-align: center;
+            padding: 80px 20px;
+            background: #002fa7;
+        }
+        .signup h2 {
+            font-size: 32px;
+            color: #fff;
+        }
+        .signup form {
+            margin-top: 20px;
+        }
+        .signup input {
+            padding: 12px;
+            width: 280px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .signup button {
+            padding: 12px 20px;
+            border: none;
+            background: white;
+            color: #002fa7;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/plane-dollar.png" alt="Flight Saver AI Logo">
+            Flight Saver AI
+        </div>
+        <div class="menu">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#signup">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>AI-Powered Flight Price Tracking. Never Overpay Again.</h1>
+        <p>Track your booked flights and get instant notifications when prices drop. Flight Saver AI helps you save money by taking advantage of airline price adjustments.</p>
+        <a href="#signup" class="cta-button">Join Early Access – Limited Spots</a>
+    </div>
+
+    <!-- Trusted By Section -->
+    <div class="trusted">
+        <p>★★★★★ Compatible with major airlines</p>
+        <div class="logo-container">
+            <img src="images/sw-logo.png" alt="Southwest Airlines">
+            <img src="images/united-logo.png" alt="United Airlines">
+            <img src="images/delta-logo.png" alt="Delta Airlines">
+            <img src="images/american-logo.png" alt="American Airlines">
+            <img src="images/jetblue-logo.png" alt="JetBlue">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="features">
+        <h2>🚀 Key Features</h2>
+        <div class="feature-box"><h3>✈️ Smart Price Tracking</h3><p>Continuous monitoring of your booked flight prices with real-time updates.</p></div>
+        <div class="feature-box"><h3>🔔 Instant Notifications</h3><p>Get alerts via email or SMS when prices drop below your purchase price.</p></div>
+        <div class="feature-box"><h3>💰 Savings Calculator</h3><p>AI-powered analysis of potential savings and rebooking recommendations.</p></div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div id="how-it-works" class="visual">
+        <h2>📌 How Flight Saver AI Works</h2>
+        <p>Simply add your flight details, and we'll monitor prices 24/7 to help you save money.</p>
+        <img src="how-it-works.png" alt="Flight Saver AI Workflow">
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="testimonials">
+        <h2>🌟 What Our Users Say</h2>
+        <p class="testimonial">"Saved $300 on my last flight to Europe!" - Frequent Flyer</p>
+        <p class="testimonial">"The easiest way to track flight prices and save money." - Business Traveler</p>
+    </div>
+
+    <!-- Signup Section -->
+    <div id="signup" class="signup">
+        <h2>Join Flight Saver AI</h2>
+        <form action="https://tally.so/r/n9do3J" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Join the Waitlist</button>
+        </form>
+    </div>
+
+</body>
+</html>
