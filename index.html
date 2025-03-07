@@ -296,6 +296,97 @@
             line-height: 1.6;
         }
 
+        /* Pricing Plans */
+        .pricing-plans {
+            text-align: center;
+            padding: 80px 20px;
+            background: #121212;
+        }
+
+        .plans-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .plan-box {
+            background: #181818;
+            padding: 40px;
+            border-radius: 10px;
+            min-width: 280px;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .plan-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan-box.popular {
+            border: 2px solid #002fa7;
+            background: #1a1a1a;
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #002fa7;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .plan-header h3 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .plan-header .price {
+            font-size: 42px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .plan-header .price span {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .plan-features li {
+            margin: 15px 0;
+            color: #aaa;
+        }
+
+        .plan-cta {
+            display: inline-block;
+            background: #002fa7;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .plan-cta:hover {
+            background: #0056b3;
+        }
+
     </style>
 </head>
 <body>
@@ -318,7 +409,7 @@
     <div class="hero">
         <h1>AI-Powered Flight Price Tracking. Never Overpay Again.</h1>
         <p>Track your booked flights and get instant notifications when prices drop. Flight Saver AI helps you save money by taking advantage of airline price adjustments.</p>
-        <a href="#signup" class="cta-button">Start Saving on Flights - Join Free</a>
+        <a href="#pricing" class="cta-button">Start Saving - From $5/mo</a>
     </div>
 
     <!-- Savings Stats Section -->
@@ -394,7 +485,55 @@
                 <p class="price">$592</p>
                 <p class="savings-amount">You Save: $258</p>
             </div>
-        </div>22.1
+        </div>
+    </div>
+
+    <!-- Pricing Plans -->
+    <div id="pricing" class="pricing-plans">
+        <h2>🎯 Choose Your Plan</h2>
+        <div class="plans-container">
+            <div class="plan-box">
+                <div class="plan-header">
+                    <h3>Basic</h3>
+                    <p class="price">$5<span>/month</span></p>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ Monitor 2 flights at once</li>
+                    <li>✓ Email notifications</li>
+                    <li>✓ Basic savings reports</li>
+                    <li>✓ 24/7 price tracking</li>
+                </ul>
+                <a href="#signup" class="plan-cta">Get Started</a>
+            </div>
+            <div class="plan-box popular">
+                <div class="popular-tag">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Pro</h3>
+                    <p class="price">$12<span>/month</span></p>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ Monitor 10 flights at once</li>
+                    <li>✓ Email + SMS notifications</li>
+                    <li>✓ Detailed savings analytics</li>
+                    <li>✓ Priority price checks</li>
+                    <li>✓ Companion fare tracking</li>
+                </ul>
+                <a href="#signup" class="plan-cta">Get Started</a>
+            </div>
+            <div class="plan-box">
+                <div class="plan-header">
+                    <h3>Business</h3>
+                    <p class="price">$29<span>/month</span></p>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ Unlimited flight monitoring</li>
+                    <li>✓ Team collaboration</li>
+                    <li>✓ Custom integrations</li>
+                    <li>✓ Dedicated support</li>
+                </ul>
+                <a href="#signup" class="plan-cta">Get Started</a>
+            </div>
+        </div>
     </div>
 
     <!-- FAQ Section -->
@@ -411,7 +550,7 @@
             </div>
             <div class="faq-item">
                 <h3>Is there a fee?</h3>
-                <p>Flight Saver AI is free to use! We only take a small percentage of the money we save you.</p>
+                <p>Plans start at just $5/month. We offer different tiers based on how many flights you want to track simultaneously. Choose the plan that best fits your travel needs!</p>
             </div>
             <div class="faq-item">
                 <h3>How do I get my savings?</h3>
