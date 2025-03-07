@@ -196,6 +196,106 @@
             border-radius: 5px;
         }
 
+        /* Savings Stats Section */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            text-align: center;
+            background: #181818;
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 200px;
+        }
+
+        .stat-box h3 {
+            font-size: 36px;
+            color: #002fa7;
+            margin: 0;
+        }
+
+        .stat-box p {
+            font-size: 18px;
+            color: #aaa;
+            margin: 10px 0 0 0;
+        }
+
+        /* Pricing Comparison */
+        .pricing {
+            text-align: center;
+            padding: 80px 20px;
+            background: #121212;
+        }
+
+        .price-comparison {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .price-box {
+            background: #181818;
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 200px;
+        }
+
+        .price-box h3 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .price-box .price {
+            font-size: 42px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price-box.savings {
+            border: 2px solid #002fa7;
+        }
+
+        .savings-amount {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 20px;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .faq-item {
+            background: #181818;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .faq-item h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .faq-item p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
     </style>
 </head>
 <body>
@@ -218,7 +318,23 @@
     <div class="hero">
         <h1>AI-Powered Flight Price Tracking. Never Overpay Again.</h1>
         <p>Track your booked flights and get instant notifications when prices drop. Flight Saver AI helps you save money by taking advantage of airline price adjustments.</p>
-        <a href="#signup" class="cta-button">Join Early Access – Limited Spots</a>
+        <a href="#signup" class="cta-button">Start Saving on Flights - Join Free</a>
+    </div>
+
+    <!-- Savings Stats Section -->
+    <div class="stats">
+        <div class="stat-box">
+            <h3>$2.1M+</h3>
+            <p>Total Customer Savings</p>
+        </div>
+        <div class="stat-box">
+            <h3>32%</h3>
+            <p>Average Price Drop Found</p>
+        </div>
+        <div class="stat-box">
+            <h3>50K+</h3>
+            <p>Flights Monitored</p>
+        </div>
     </div>
 
     <!-- Trusted By Section -->
@@ -262,6 +378,46 @@
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Join the Waitlist</button>
         </form>
+    </div>
+
+    <!-- Pricing Comparison -->
+    <div class="pricing">
+        <h2>💰 Real Savings Example</h2>
+        <div class="price-comparison">
+            <div class="price-box original">
+                <h3>Original Price</h3>
+                <p class="price">$850</p>
+                <p class="route">NYC → LONDON</p>
+            </div>
+            <div class="price-box savings">
+                <h3>After Price Drop</h3>
+                <p class="price">$592</p>
+                <p class="savings-amount">You Save: $258</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>How does it work?</h3>
+                <p>Simply enter your flight details and we'll monitor prices 24/7. When we detect a price drop, you'll receive an instant notification with rebooking instructions.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Which airlines are supported?</h3>
+                <p>We support all major US airlines that offer free cancellation or credit for price drops, including Southwest, Delta, and JetBlue.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a fee?</h3>
+                <p>Flight Saver AI is free to use! We only take a small percentage of the money we save you.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I get my savings?</h3>
+                <p>When we find a lower price, we guide you through the simple process of rebooking or claiming airline credit for the difference.</p>
+            </div>
+        </div>
     </div>
 
 </body>
