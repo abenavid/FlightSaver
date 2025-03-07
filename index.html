@@ -25,31 +25,31 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 20px 20px; /* Reduced side padding from 50px to 20px */
             background: #121212;
             position: fixed;
-            width: 100%;
+            width: calc(100% - 40px); /* Adjust width to account for padding */
             top: 0;
             z-index: 1000;
         }
         .logo {
-            display: flex; /* Ensures proper alignment */
-            align-items: center; /* Aligns the logo and text in the middle */
-            font-size: 24px;
+            display: flex;
+            align-items: center;
+            font-size: 20px; /* Reduced from 24px */
             font-weight: bold;
             color: #fff;
         }
         .logo img {
-            height: 40px;  /* Force a reasonable height */
-            width: auto;   /* Maintain aspect ratio */
-            margin-right: 10px; /* Space between logo and text */
+            height: 32px;  /* Reduced from 40px */
+            width: auto;
+            margin-right: 8px; /* Reduced from 10px */
             display: inline-block;
-            vertical-align: middle; /* Aligns with the text */
+            vertical-align: middle;
         }
         .menu a {
-            margin-left: 20px;
+            margin-left: 15px; /* Reduced from 20px */
             color: #ccc;
-            font-size: 16px;
+            font-size: 15px; /* Reduced from 16px */
             transition: 0.3s;
         }
         .menu a:hover {
@@ -226,9 +226,9 @@
         <p>★★★★★ Compatible with major airlines</p>
         <div class="logo-container">
             <img src="images/sw-logo.png" alt="Southwest Airlines">
-            <img src="images/united-logo.png" alt="United Airlines">
+            <!-- <img src="images/united-logo.png" alt="United Airlines">  -->
             <img src="images/delta-logo.png" alt="Delta Airlines">
-            <img src="images/american-logo.png" alt="American Airlines">
+            <!-- <img src="images/american-logo.png" alt="American Airlines"> -->
             <img src="images/jetblue-logo.png" alt="JetBlue">
         </div>
     </div>
