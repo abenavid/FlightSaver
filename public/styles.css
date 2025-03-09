@@ -1,0 +1,660 @@
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Adjust to match your navbar height */
+    background: #0E0E0E;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #121212;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* This fixes the width calculation */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+.logo a {
+    color: white;
+}
+.logo img {
+    height: 32px;  /* Reduced from 40px */
+    width: auto;
+    margin-right: 8px; /* Reduced from 10px */
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu {
+    margin-right: 20px; /* Add some spacing from the right edge */
+}
+.menu a {
+    margin-left: 15px; /* Reduced from 20px */
+    color: #ccc;
+    font-size: 15px; /* Reduced from 16px */
+    transition: 0.3s;
+}
+.menu a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    padding-top: 140px; /* Increase this value if the navbar still overlaps */
+}
+.hero h1 {
+    font-size: 48px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+}
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #aaa;
+}
+.cta-button {
+    display: inline-block;
+    background: #002fa7;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* Trusted By Section */
+.trusted {
+    text-align: center;
+    background: #121212;
+    padding: 40px 0;
+}
+.trusted p {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.logo-container img {
+    height: 40px;
+    opacity: 1;
+    transition: 0.3s;
+    filter: brightness(0) invert(1);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 80px 20px;
+}
+.feature-box {
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    background: #181818;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+.feature-box h3 {
+    font-size: 22px;
+    color: #fff;
+}
+.feature-box p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* How It Works Section */
+.visual {
+    text-align: center;
+    padding: 80px 20px 0 20px;
+    background: #121212;
+}
+
+.section-intro {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.step-box {
+    background: #181818;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.step-number {
+    background: #002fa7;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step-box h3 {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.step-box p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.process-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.highlight-box {
+    background: #181818;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.highlight-box h4 {
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.highlight-box p {
+    color: #aaa;
+    margin: 0;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    background: #121212;
+    padding: 80px 20px;
+}
+.testimonials h2 {
+    font-size: 28px;
+    color: #fff;
+}
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-style: italic;
+    color: #bbb;
+}
+
+/* Signup Section */
+.signup {
+    text-align: center;
+    padding: 80px 20px;
+    background: #002fa7;
+    margin: 0; /* Remove any potential side margins */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.signup h2 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.signup form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on mobile */
+}
+
+.signup input {
+    padding: 12px;
+    width: 280px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0; /* Remove margin-right */
+}
+
+.signup button {
+    padding: 12px 20px;
+    border: none;
+    background: white;
+    color: #002fa7;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0; /* Remove any default margins */
+}
+
+.signup p {
+  display: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Savings Stats Section */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    text-align: center;
+    background: #181818;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.stat-box h3 {
+    font-size: 36px;
+    color: #002fa7;
+    margin: 0;
+}
+
+.stat-box p {
+    font-size: 18px;
+    color: #aaa;
+    margin: 10px 0 0 0;
+}
+
+/* Pricing Comparison */
+.pricing {
+    text-align: center;
+    padding: 80px 20px 0 20px;
+    background: #121212;
+}
+
+.price-comparison {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    background: #181818;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.price-box h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.price-box .price {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price-box.savings {
+    border: 2px solid #002fa7;
+}
+
+.savings-amount {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 20px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.faq-item {
+    background: #181818;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.faq-item h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.faq-item p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Pricing Plans */
+.pricing-plans {
+    text-align: center;
+    padding: 80px 20px;
+    background: #121212;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.plan-box {
+    background: #181818;
+    padding: 40px;
+    border-radius: 10px;
+    min-width: 280px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.plan-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Make sure the hover effect only works after the box is visible */
+.plan-box.visible:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.plan-box.popular {
+    border: 2px solid #002fa7;
+    background: #1a1a1a;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #002fa7;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plan-header h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.plan-header .price {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.plan-header .price span {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.plan-features li {
+    margin: 15px 0;
+    color: #aaa;
+}
+
+.plan-cta {
+    display: inline-block;
+    background: #002fa7;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.plan-cta:hover {
+    background: #0056b3;
+}
+
+.savings-guarantee {
+    color: #bbb; 
+    margin-top: 64px;
+}
+
+.nav-cta {
+    background: #002fa7;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white !important;
+}
+
+.nav-cta:hover {
+    background: #0056b3;
+}
+
+/* Mobile Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+#close-button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+#close-button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 5px 0;
+}
+
+#close-button.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#close-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#close-button.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #121212;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu a {
+        display: block;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+    .nav-cta {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* Animation for hamburger to X */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .hero {
+      padding: 100px 20px;
+    }
+    
+    .highlight-box {
+        min-width: 100%;
+    }
+}
+
+#checkout-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 5%;
+}
+
+#close-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; 
+  background-color: white;
+  max-width: 500px;
+}
+
+#checkout {
+  max-width: 500px;
+  max-height: 90%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+#checkout::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Animation class (already added) */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Special case for plan-box hover effect */
+.plan-box.visible:hover {
+    transform: translateY(-5px);
+}
